@@ -1,4 +1,5 @@
 import { expectTypeOf } from 'expect-type';
+
 import * as oneElementOfModule from './oneElementOf';
 import * as oneEntryOfModule from './oneEntryOf';
 import { oneOf } from './oneOf';
