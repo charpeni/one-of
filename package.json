@@ -2,6 +2,19 @@
   "name": "@charpeni/one-of",
   "version": "1.0.0",
   "description": "Type-safe utilities to return a random element from an array or random entry from an object",
+  "keywords": [
+    "random",
+    "randomize",
+    "array",
+    "object",
+    "element",
+    "item",
+    "entry",
+    "value",
+    "key",
+    "math",
+    "pick"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/charpeni/one-of.git"
