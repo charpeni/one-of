@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  one-of
+  @charpeni/one-of
 </h3>
 
 <p align="center">
@@ -11,17 +11,17 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.org/package/one-of">
-    <img src="https://badge.fury.io/js/one-of.svg" alt="Current npm package version." />
+  <a href="https://www.npmjs.org/package/@charpeni/one-of">
+    <img src="https://badge.fury.io/js/%40charpeni%2Fone-of.svg" alt="Current npm package version." />
   </a>
-  <a href="https://www.npmjs.org/package/one-of">
-    <img src="https://img.shields.io/npm/dm/one-of" alt="Monthly downloads" />
+  <a href="https://www.npmjs.org/package/@charpeni/one-of">
+    <img src="https://img.shields.io/npm/dm/%40charpeni%2Fone-of" alt="Monthly downloads" />
   </a>
-  <a href="https://circleci.com/gh/charpeni/one-of">
+  <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
   <a href="https://github.com/charpeni/one-of/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="one-of is released under the MIT license." />
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="@charpeni/one-of is released under the MIT license." />
   </a>
 </p>
 
@@ -30,7 +30,7 @@
 ### Installation
 
 ```sh
-npm install one-of
+npm install @charpeni/one-of
 ```
 
 ### Usage
@@ -51,7 +51,7 @@ It was built mostly to be used in tests or for generating random data (it can al
 <!-- prettier-ignore-end -->
 
 ```ts
-import { oneOf } from 'one-of';
+import { oneOf } from '@charpeni/one-of';
 
 // Returns a random element from the array
 const element = oneOf([1, 2, 3]); // 2
@@ -65,7 +65,7 @@ const entry = oneOf({ a: 1, b: 2, c: 3 }); // ['b', 2]
 Specific functions are also available: `oneElementOf` and `oneEntryOf`, that's what `oneOf` uses under the hood:
 
 ```ts
-import { oneElementOf, oneEntryOf } from 'one-of';
+import { oneElementOf, oneEntryOf } from '@charpeni/one-of';
 
 // Returns a random element from the array
 const element = oneElementOf([1, 2, 3]); // 2
@@ -78,4 +78,4 @@ const entry = oneEntryOf({ a: 1, b: 2, c: 3 }); // ['b', 2]
 
 ## License
 
-one-of is [MIT licensed](LICENSE).
+@charpeni/one-of is [MIT licensed](LICENSE).

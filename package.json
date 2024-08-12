@@ -1,5 +1,5 @@
 {
-  "name": "one-of",
+  "name": "@charpeni/one-of",
   "version": "1.0.0",
   "description": "Type-safe utilities to return a random element from an array or random entry from an object",
   "repository": {
