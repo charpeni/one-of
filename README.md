@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="100" src="TODO" alt="library's logo">
+  <img height="100" src="https://github.com/user-attachments/assets/34f0670b-491e-4a1c-a1a8-373a252a16b5" alt="library's logo">
 </p>
 
 <h3 align="center">
