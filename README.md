@@ -37,6 +37,12 @@ npm install one-of
 
 `oneOf` is a function accepting either an array or an object and returning a random element or entry from it.
 
+It was built mostly to be used in tests or for generating random data (it can also be used safely for any other type of behaviors, including production apps), e.g.:
+
+```tsx
+<Card color={oneOf(['red', 'blue', 'green'])}>{/* ... */}</Card>
+```
+
 <!-- prettier-ignore-start -->
 > [!NOTE]
 > `oneOf` is a type-safe function. It will infer the type of the array or object passed as an argument and return the corresponding type to ensure the return type is a union of possibilities rather than a primitive type (`1 | 2` instead of `number[]`).
@@ -68,12 +74,6 @@ const element = oneElementOf([1, 2, 3]); // 2
 // Returns a random entry from the object
 const entry = oneEntryOf({ a: 1, b: 2, c: 3 }); // ['b', 2]
 //    ^? const entry: ['a', 1] | ['b', 2] | ['c', 3]
-```
-
-It was built mostly to be used in tests or for generating random data (it can also be used safely for any other type of behaviors, including production apps), e.g.:
-
-```tsx
-<Card color={oneOf(['red', 'blue', 'green'])}>{/* ... */}</Card>
 ```
 
 ## License
