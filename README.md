@@ -17,6 +17,7 @@
   <a href="https://www.npmjs.org/package/@charpeni/one-of">
     <img src="https://img.shields.io/npm/dm/%40charpeni%2Fone-of" alt="Monthly downloads" />
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcharpeni%2Fone-of?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcharpeni%2Fone-of.svg?type=shield"/></a>
   <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
@@ -26,6 +27,9 @@
 </p>
 
 <hr />
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcharpeni%2Fone-of.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcharpeni%2Fone-of?ref=badge_large)
 
 ### Installation
 
