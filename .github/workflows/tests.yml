@@ -1,8 +1,10 @@
 name: Tests
 
 on:
-  - push
-  - pull_request
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -17,7 +19,11 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Run Jest
-        run: yarn test
+        run: yarn test --coverage
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
   lint:
     runs-on: ubuntu-latest
     steps:

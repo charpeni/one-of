@@ -17,6 +17,9 @@
   <a href="https://www.npmjs.org/package/@charpeni/one-of">
     <img src="https://img.shields.io/npm/dm/%40charpeni%2Fone-of" alt="Monthly downloads" />
   </a>
+  <a href="https://codecov.io/gh/charpeni/one-of" > 
+    <img src="https://codecov.io/gh/charpeni/one-of/graph/badge.svg?token=KXQCYOMPYH"/> 
+  </a>
   <a href="https://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
