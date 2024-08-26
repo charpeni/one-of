@@ -46,7 +46,8 @@
     "prepack": "yarn build",
     "prepare": "husky",
     "test": "jest",
-    "type-check": "tsc --pretty --noEmit"
+    "type-check": "tsc --pretty --noEmit",
+    "check-exports": "attw --pack ."
   },
   "lint-staged": {
     "*.{js,ts,md}": [
@@ -54,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "@eslint/js": "^9.9.0",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/eslint__js": "^8.42.3",

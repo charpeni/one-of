@@ -50,6 +50,19 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Run type checking
         run: yarn type-check
+  check-exports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Check exports
+        run: yarn check-exports
   build:
     runs-on: ubuntu-latest
     steps:
