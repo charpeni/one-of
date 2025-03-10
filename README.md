@@ -2,23 +2,10 @@
 
 <img height="125" src="https://github.com/user-attachments/assets/34f0670b-491e-4a1c-a1a8-373a252a16b5" alt="library's logo" align="right">
 
-<p>
-  <a href="https://www.npmjs.org/package/@charpeni/one-of">
-    <img src="https://badge.fury.io/js/%40charpeni%2Fone-of.svg" alt="Current npm package version." />
-  </a>
-  <a href="https://www.npmjs.org/package/@charpeni/one-of">
-    <img src="https://img.shields.io/npm/dm/%40charpeni%2Fone-of" alt="Monthly downloads" />
-  </a>
-  <a href="https://codecov.io/gh/charpeni/one-of" > 
-    <img src="https://codecov.io/gh/charpeni/one-of/graph/badge.svg?token=KXQCYOMPYH"/> 
-  </a>
-  <a href="https://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  </a>
-  <a href="https://github.com/charpeni/one-of/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="@charpeni/one-of is released under the MIT license." />
-  </a>
-</p>
+[![Version](https://badge.fury.io/js/%40charpeni%2Fone-of.svg)](https://www.npmjs.org/package/@charpeni/one-of)
+[![Monthly Downloads](https://img.shields.io/npm/dm/%40charpeni%2Fone-of)](https://www.npmjs.org/package/@charpeni/one-of)
+[![CodeCov](https://codecov.io/gh/charpeni/one-of/graph/badge.svg?token=KXQCYOMPYH)](https://codecov.io/gh/charpeni/one-of)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/charpeni/one-of/blob/main/LICENSE)
 
 Type-safe and tested utilities to return a random element from an array or random entry from an object.
 
