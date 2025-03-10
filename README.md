@@ -1,16 +1,8 @@
-<p align="center">
-  <img height="100" src="https://github.com/user-attachments/assets/34f0670b-491e-4a1c-a1a8-373a252a16b5" alt="library's logo">
-</p>
+# @charpeni/one-of
 
-<h3 align="center">
-  @charpeni/one-of
-</h3>
+<img height="125" src="https://github.com/user-attachments/assets/34f0670b-491e-4a1c-a1a8-373a252a16b5" alt="library's logo" align="right">
 
-<p align="center">
-  Type-safe and tested utilities to return a random element from an array or random entry from an object.
-</p>
-
-<p align="center">
+<p>
   <a href="https://www.npmjs.org/package/@charpeni/one-of">
     <img src="https://badge.fury.io/js/%40charpeni%2Fone-of.svg" alt="Current npm package version." />
   </a>
@@ -28,15 +20,17 @@
   </a>
 </p>
 
-<hr />
+Type-safe and tested utilities to return a random element from an array or random entry from an object.
 
-### Installation
+<br />
+
+## Installation
 
 ```sh
 npm install @charpeni/one-of
 ```
 
-### Usage
+## Usage
 
 `oneOf` is a function accepting either an array or an object and returning a random element or entry from it.
 
