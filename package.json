@@ -25,14 +25,13 @@
   "type": "module",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.cts",
   "files": [
     "LICENSE",
     "README.md",
@@ -40,7 +39,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsdown",
     "format": "prettier --write .",
     "lint": "eslint .",
     "prepack": "pnpm build",
@@ -67,7 +66,7 @@
     "lint-staged": "^16.1.0",
     "prettier": "3.5.3",
     "ts-jest": "^29.4.0",
-    "tsup": "^8.5.0",
+    "tsdown": "^0.12.7",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.34.0"
   }
