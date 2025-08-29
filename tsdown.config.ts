@@ -8,12 +8,5 @@ export default defineConfig({
   dts: true,
   clean: true,
   unbundle: true,
-  exports: {
-    // I'm not sure why, but the package.json file is being included in the exports.
-    // We don't want that, so we remove it.
-    customExports(pkg) {
-      delete pkg['./package.json'];
-      return pkg;
-    },
-  },
+  exports: true,
 });
