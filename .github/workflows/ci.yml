@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - task: test
+            command: pnpm test --coverage
+          - task: lint
+            command: pnpm lint
+          - task: type-check
+            command: pnpm type-check
+          - task: check-exports
+            command: pnpm check-exports
+          - task: build
+            command: pnpm build
+    name: ${{ matrix.task }}
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Install pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+      - name: Use Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: ${{ matrix.task }}
+        run: ${{ matrix.command }}
+      - name: Upload results to Codecov
+        if: matrix.task == 'test'
+        uses: codecov/codecov-action@fdcc8476540edceab3de004e990f80d881c6cc00 # v5.5.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
